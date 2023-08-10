@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="blog-uid" content="782190">
+  <meta name="blog-name" content="zhichen 的博客">
+  <meta name="current-user" content="782190">
+  <link rel="stylesheet" href="/static/blog/dark/common.css">
+  <link rel="stylesheet" href="/static/blog/dark/article_list.css">
+  <style> 
+  body {
+    background-color: #272d4d !important
+  }
+  </style>  <style>
+    [v-cloak] {
+      display: none
+    }
+  </style>
+  <title>文章列表 - zhichen 的博客 - 洛谷博客</title>
+</head>
+
+<body>
+  <div>
+
+    <div v-cloak class="ui borderless main menu">
+      <div class="ui text container">
+        <a href="." class="header item">
+          首页
+        </a>
+        <a href="." class="item">文章</a>
+        <a href="https://www.luogu.com.cn/blogAdmin" class="right item">管理后台</a>
+      </div>
+    </div>
+
+    <div id="article-list"></div>
+  </div>
+  <script>
+    var BlogGlobals = {
+      blogName: document.querySelector('meta[name=blog-name]').getAttribute('content'),
+      blogUID: parseInt(document.querySelector('meta[name=blog-uid]').getAttribute('content')),
+      currentUser: parseInt(document.querySelector('meta[name=current-user]').getAttribute('content')),
+      luoguAddress: 'https://www.luogu.com.cn',
+      picAddress: 'https://cdn.luogu.com.cn',
+      blogSubtitle: ''
+    }
+  </script>
+  <script src="/static/blog/dark/common.js"></script>
+  <script src="/static/blog/dark/article_list.js"></script>
+</body>
+
+</html>
